@@ -28,7 +28,7 @@ bot.add_cog(help_cog(bot))
 bot.add_cog(music_cog(bot))
 
 #start the bot with our token
-# with open('token.txt') as f:
-#     token = f.read()
-# bot.run(token)
-bot.run(os.getenv("TOKEN"))
+with open('token.txt') as f:
+    token = f.read()
+bot.run(token)
+# bot.run(os.getenv("TOKEN"))
